@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Learn Tailwind CSS</title>
+</head>
+
+<body class="font-mono dark:bg-slate-900">
+  <h1 class="title">Learn Tailwind CSS</h1>
+
+  <div class="mx-auto lg:w-[900px] container">
+    <!-- Spacing -->
+    <section id="spacing" class="section-card">
+      <h1 class="section-title">Spacing</h1>
+
+      <div class="bg-slate-300 rounded-lg font-bold m-10 w-32 text-center dark:text-white dark:bg-slate-700">
+        Margin
+      </div>
+
+      <div class="bg-slate-300 rounded-lg font-bold text-center w-32 mx-auto mb-10 dark:text-white dark:bg-slate-700">
+        Margin auto
+      </div>
+
+      <div class="bg-slate-300 rounded-lg font-bold p-10 text-center dark:text-white dark:bg-slate-700">
+        Padding
+      </div>
+    </section>
+
+    <!-- Sizing -->
+    <section id="sizing" class="section-card">
+      <h1 class="section-title">Sizing</h1>
+
+      <div class="bg-slate-300 dark:bg-slate-700 dark:text-white rounded-lg font-bold p-3 text-center w-1/5 my-3 mx-auto">
+        Small width
+      </div>
+      <div class="bg-slate-300 dark:bg-slate-700 dark:text-white rounded-lg font-bold p-3 text-center w-96 my-3 mx-auto">
+        Large width
+      </div>
+      <div class="bg-slate-300 dark:bg-slate-700 dark:text-white rounded-lg font-bold p-3 text-center w-full my-3 mx-auto">
+        Full width
+      </div>
+
+      <div class="bg-slate-300 dark:bg-slate-700 dark:text-white rounded-lg font-bold p-3 text-center w-48 h-48 my-3 mx-auto flex">
+        <div class="m-auto">Same width & height</div>
+      </div>
+    </section>
+
+    <!-- Color -->
+    <section id="color" class="section-card bg-pink-100">
+      <h1 class="section-title bg-pink-200">Color</h1>
+
+      <div class="bg-red-300 rounded-lg font-bold p-3 text-center w-48 my-3 mx-auto">
+        Red
+      </div>
+      <div class="bg-green-300 rounded-lg font-bold p-3 text-center w-48 my-3 mx-auto">
+        Green
+      </div>
+      <div class="bg-blue-300 rounded-lg font-bold p-3 text-center w-48 my-3 mx-auto">
+        Blue
+      </div>
+      <div class="bg-purple-300 rounded-lg font-bold p-3 text-center w-48 my-3 mx-auto">
+        Purple
+      </div>
+    </section>
+
+    <!-- Typography -->
+    <section id="typography" class="section-card bg-purple-100">
+      <h1 class="section-title bg-purple-200">Typography</h1>
+
+      <div class="bg-purple-300 dark:bg-slate-700 dark:text-white rounded-lg font-sans p-3 my-3 mx-auto">
+        <h2 class="text-2xl font-bold">Sans-serif</h2>
+        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, ullam.</p>
+      </div>
+
+      <div class="bg-purple-300 dark:bg-slate-700 dark:text-white rounded-lg font-serif p-3 my-3 mx-auto">
+        <h2 class="text-2xl font-bold">Serif</h2>
+        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, ullam.</p>
+      </div>
+
+      <div class="bg-purple-300 dark:bg-slate-700 dark:text-white rounded-lg font-mono p-3 my-3 mx-auto">
+        <h2 class="text-2xl font-bold">Monospace</h2>
+        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, ullam.</p>
+      </div>
+    </section>
+
+    <!-- Background image -->
+    <section id="image" class="section-card bg-green-100">
+      <h1 class="section-title bg-green-200">Background image</h1>
+
+      <div class="grid grid-cols-2">
+        <div class="h-56 bg-slate-200 dark:bg-slate-700 dark:text-white rounded-lg overflow-hidden m-2">
+          <div class="w-full bg-slate-400 h-2/3 bg-cover " style="background-image: url('wall.jpg');">
+          </div>
+          <div class="px-4 py-2">
+            <h3 class="text-xl font-bold">Image</h3>
+            <p class="overflow-ellipsis">Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+        <div class="h-56 bg-slate-200 dark:bg-slate-700 dark:text-white rounded-lg overflow-hidden m-2">
+          <div class="w-full bg-slate-400 h-2/3 bg-cover blur-sm overflow-hidden" style="background-image: url('wall.jpg');">
+          </div>
+          <div class="px-4 py-2">
+            <h3 class="text-xl font-bold">Blurred image</h3>
+            <p class="overflow-ellipsis">Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+        <div class="h-56 bg-slate-200 dark:bg-slate-700 dark:text-white rounded-lg overflow-hidden m-2">
+          <div class="w-full bg-slate-400 h-2/3 bg-cover" style="background-image: url('wall.jpg');">
+            <div class="w-full h-full bg-white bg-opacity-50 backdrop-blur"></div>
+          </div>
+          <div class="px-4 py-2">
+            <h3 class="text-xl font-bold">Frosted image</h3>
+            <p class="overflow-ellipsis">Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+        <div class="h-56 bg-slate-200 dark:bg-slate-700 dark:text-white rounded-lg overflow-hidden m-2">
+          <div class="w-full bg-slate-400 h-2/3 bg-cover" style="background-image: url('wall.jpg');">
+            <div class="w-full h-full bg-red-500 mix-blend-overlay"></div>
+          </div>
+          <div class="px-4 py-2">
+            <h3 class="text-xl font-bold">Overlay image</h3>
+            <p class="overflow-ellipsis">Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pseudo-class -->
+    <section id="pseudo" class="section-card bg-sky-100">
+      <h1 class="section-title bg-sky-200">Pseudo-class</h1>
+
+      <div class="dark:text-white grid grid-flow-row grid-cols-2 space-x-2 mb-4">
+        <div class="rounded-lg dark:bg-slate-700 bg-neutral-100 font-serif shadow-lg p-5">
+          <h2 class="text-3xl font-bold mb-3">First Large Letter</h2>
+          <p class="first-letter:text-7xl first-letter:float-left first-letter:mr-1">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium ab hic eius cumque id eveniet cum, harum voluptatum libero obcaecati! Inventore veniam perferendis quidem tenetur
+            debitis
+            unde, facere quos ducimus modi incidunt quis maiores a quia dolorum quam ut eveniet ipsa alias aut ratione reprehenderit? Delectus libero omnis blanditiis? Iure.
+          </p>
+        </div>
+        <div class="rounded-lg dark:bg-slate-700 bg-neutral-100 font-serif shadow-lg p-5">
+          <h2 class="text-3xl font-bold mb-3">First Line Uppercase</h2>
+          <p class="first-line:uppercase">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium ab hic eius cumque id eveniet cum, harum voluptatum libero obcaecati! Inventore veniam perferendis quidem tenetur
+            debitis
+            unde, facere quos ducimus modi incidunt quis maiores a quia dolorum quam ut eveniet ipsa alias aut ratione reprehenderit? Delectus libero omnis blanditiis? Iure.
+          </p>
+        </div>
+      </div>
+
+      <div class="rounded-lg dark:text-white dark:bg-slate-700 bg-white shadow-sm p-5 font-sans mb-4">
+        <h2 class="font-bold mb-4 text-2xl">Custom Form Input</h2>
+        <form>
+          <label for="email">
+            <span class="mb-2 block after:content-['*'] after:text-red-500 after:ml-0.5">Email</span>
+            <input type="email" name="email" id="email"
+              class="w-full rounded-md p-1 shadow focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-400 invalid:ring-red-500 invalid:focus:ring-red-500 invalid:focus:border-red-500 peer text-slate-700"
+              placeholder="youremail@email.com">
+            <p class="text-sm m-1 text-red-500 invisible peer-invalid:visible">Email tidak valid</p>
+          </label>
+          <button type="submit" class="bg-blue-500 rounded-md py-2 px-4 text-white font-semibold text-sm shadow hover:bg-blue-600 focus:outline-none focus:ring focus:ring-sky-500">Submit</button>
+        </form>
+      </div>
+
+      <div class="rounded-lg dark:text-white dark:bg-slate-700 bg-white shadow-sm p-5 font-sans">
+        <h2 class="font-bold text-2xl mb-4">Dark Mode Toggle</h2>
+        <div class="flex justify-center my-auto w-full">
+          <span class="my-auto text-xl">Light</span>
+          <input type="checkbox" id="toggle" class="hidden">
+          <label for="toggle">
+            <div class="w-24 h-12 bg-yellow-400 rounded-full flex items-center p-0.5 cursor-pointer mx-4" id="theme-toogle-bg">
+              <div class="w-11 h-11 rounded-full bg-white" id="theme-toggle"></div>
+            </div>
+          </label>
+          <span class="my-auto text-xl">Dark</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Transfrom -->
+    <section id="transform" class="section-card mb-8 bg-pink-100">
+      <h1 class="section-title bg-pink-200">Transform (Scale, Rotate, Translate)</h1>
+
+      <div class="grid grid-cols-3 dark:text-white">
+        <div class="h-48 flex items-center">
+          <div class="w-36 h-36 bg-pink-400 dark:bg-slate-700 mx-auto flex items-center scale-50">
+            <div class="m-auto text-lg">Scale 50%</div>
+          </div>
+        </div>
+        <div class="h-48 flex items-center">
+          <div class="w-36 h-36 bg-pink-400 dark:bg-slate-700 mx-auto flex items-center">
+            <div class="m-auto text-lg">Scale 100%</div>
+          </div>
+        </div>
+        <div class="h-48 flex items-center">
+          <div class="w-36 h-36 bg-pink-400 dark:bg-slate-700 mx-auto flex items-center scale-150">
+            <div class="m-auto text-lg">Scale 150%</div>
+          </div>
+        </div>
+        <div class="h-48 flex items-center">
+          <div class="w-36 h-36 bg-pink-400 dark:bg-slate-700 mx-auto flex items-center rotate-45">
+            <div class="m-auto text-lg">Rotate 45deg</div>
+          </div>
+        </div>
+        <div class="h-48 flex items-center">
+          <div class="w-36 h-36 bg-pink-400 dark:bg-slate-700 mx-auto flex items-center rotate-90">
+            <div class="m-auto text-lg">Rotate 90deg</div>
+          </div>
+        </div>
+        <div class="h-48 flex items-center">
+          <div class="w-36 h-36 bg-pink-400 dark:bg-slate-700 mx-auto flex items-center rotate-180">
+            <div class="m-auto text-lg">Rotate 180deg</div>
+          </div>
+        </div>
+        <div class="h-48 flex items-center bg-pink-300 dark:bg-slate-800 border-pink-500 border dark:border-slate-300">
+          <div class="w-36 h-36 bg-pink-400 dark:bg-slate-700 mx-auto flex items-center translate-x-12">
+            <div class="m-auto text-lg text-center">Translate X 48px (3rem) Left to Right</div>
+          </div>
+        </div>
+        <div class="h-48 flex items-center bg-pink-300 dark:bg-slate-800 border-pink-500 border dark:border-slate-300">
+          <div class="w-36 h-36 bg-pink-400 dark:bg-slate-700 mx-auto flex items-center -translate-y-8">
+            <div class="m-auto text-lg text-center">Translate Y -32px (-2rem)</div>
+          </div>
+        </div>
+        <div class="h-48 flex items-center bg-pink-300 dark:bg-slate-800 border-pink-500 border dark:border-slate-300">
+          <div class="w-36 h-36 bg-pink-400 dark:bg-slate-700 mx-auto flex items-center -translate-x-12">
+            <div class="m-auto text-lg text-center">Translate X -48px (-3rem) Right to Left</div>
+          </div>
+        </div>
+        <div class="h-48 flex items-center bg-pink-300 dark:bg-slate-800 border-pink-500 border dark:border-slate-300">
+          <div class="w-36 h-36 bg-pink-400 dark:bg-slate-700 mx-auto flex items-center -translate-x-12 translate-y-12">
+            <div class="m-auto text-lg text-center">Translate X -48px & Y 48px
+            </div>
+          </div>
+        </div>
+        <div class="h-48 flex items-center bg-pink-300 dark:bg-slate-800 border-pink-500 border dark:border-slate-300">
+          <div class="w-36 h-36 bg-pink-400 dark:bg-slate-700 mx-auto flex items-center translate-y-8">
+            <div class="m-auto text-lg text-center">Translate Y 32px (2rem)</div>
+          </div>
+        </div>
+        <div class="h-48 flex items-center bg-pink-300 dark:bg-slate-800 border-pink-500 border dark:border-slate-300">
+          <div class="w-36 h-36 bg-pink-400 dark:bg-slate-700 mx-auto flex items-center translate-x-12 translate-y-12">
+            <div class="m-auto text-lg text-center">Translate XY 48px (3rem)</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Transition -->
+    <section id="transition" class="section-card bg-pink-100">
+      <h1 class="section-title bg-pink-200">Transition</h1>
+
+      <div class="grid grid-flow-row grid-cols-3">
+        <div class="h-48 flex items-center group">
+          <div class="h-36 w-36 duration-200 group-hover:scale-125 bg-pink-400 dark:bg-slate-700 mx-auto flex">
+            <div class="m-auto text-center dark:text-white">Hover me! 0.2s</div>
+          </div>
+        </div>
+        <div class="h-48 flex items-center group">
+          <div class="h-36 w-36 duration-500 group-hover:rotate-45 bg-pink-400 dark:bg-slate-700 mx-auto flex">
+            <div class="m-auto text-center dark:text-white">Hover me! 0.5s</div>
+          </div>
+        </div>
+        <div class="h-48 flex items-center group">
+          <div class="h-36 w-36 duration-1000 group-hover:translate-x-32 bg-pink-400 dark:bg-slate-700 mx-auto flex">
+            <div class="m-auto text-center dark:text-white">Hover me! 1s</div>
+          </div>
+        </div>
+        <div class="h-48 flex items-center group">
+          <div class="h-36 w-36 duration-500 ease-linear group-hover:rotate-90 bg-pink-400 dark:bg-slate-700 mx-auto flex">
+            <div class="m-auto text-center dark:text-white">Hover me! 0.5s linear</div>
+          </div>
+        </div>
+        <div class="h-48 flex items-center group">
+          <div class="h-36 w-36 duration-500 ease-in group-hover:rotate-90 bg-pink-400 dark:bg-slate-700 mx-auto flex">
+            <div class="m-auto text-center dark:text-white">Hover me! 0.5s ease-in</div>
+          </div>
+        </div>
+        <div class="h-48 flex items-center group">
+          <div class="h-36 w-36 duration-500 ease-out group-hover:rotate-90 bg-pink-400 dark:bg-slate-700 mx-auto flex">
+            <div class="m-auto text-center dark:text-white">Hover me! 0.5s ease-out</div>
+          </div>
+        </div>
+        <div class="h-48 flex items-center group">
+          <div class="h-36 w-36 duration-500 ease-in-out group-hover:translate-x-96 bg-pink-400 dark:bg-slate-700 mx-auto flex">
+            <div class="m-auto text-center dark:text-white">Hover me! 0.5s ease-in-out</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Animation -->
+    <section id="animation" class="section-card bg-pink-100">
+      <h1 class="section-title bg-pink-200">Animation</h1>
+
+      <div class="grid grid-flow-row grid-cols-4">
+        <div class="h-40 flex items-center">
+          <div class="bg-pink-300 dark:bg-slate-700 w-32 h-32 mx-auto flex rounded-md">
+            <div class="w-12 h-12 bg-pink-400 dark:bg-slate-100 m-auto flex rounded-full animate-spin">
+              <div class="m-auto">Spin</div>
+            </div>
+          </div>
+        </div>
+        <div class="h-40 flex items-center">
+          <div class="bg-pink-300 dark:bg-slate-700 w-32 h-32 mx-auto flex rounded-md">
+            <div class="w-12 h-12 bg-pink-400 dark:bg-slate-100 flex m-auto rounded-full animate-ping">
+              <div class="m-auto">Ping</div>
+            </div>
+          </div>
+        </div>
+        <div class="h-40 flex items-center">
+          <div class="bg-pink-300 dark:bg-slate-700 w-32 h-32 mx-auto flex rounded-md">
+            <div class="w-12 h-12 bg-pink-400 dark:bg-slate-100 flex m-auto rounded-full animate-pulse">
+              <div class="m-auto">Pulse</div>
+            </div>
+          </div>
+        </div>
+        <div class="h-40 flex items-center">
+          <div class="bg-pink-300 dark:bg-slate-700 w-32 h-32 mx-auto flex rounded-md">
+            <div class="w-16 h-16 bg-pink-400 dark:bg-slate-100 m-auto flex items-center rounded-full animate-bounce">
+              <div class="m-auto">Bounce</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Absurd clock -->
+      <div class="mx-auto my-4 flex items-center w-52 h-52 bg-pink-300 dark:bg-slate-700 rounded-full">
+        <div class="w-2 h-2 bg-pink-800 dark:bg-slate-100 rounded-full m-auto flex items-center">
+          <div class="mx-auto translate-y-8">
+            <div class="m-auto w-1 h-16 bg-pink-800 dark:bg-slate-100 origin-top animate-spin">
+              <div class="m-auto w-1 h-24 bg-pink-800 dark:bg-slate-100 origin-top animate-spin">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Layout -->
+    <section id="layout" class="section-card bg-sky-100">
+      <h1 class="section-title bg-sky-200">Layout (Float, Position, Column)</h1>
+
+      <div class="rounded-lg dark:bg-slate-700 bg-neutral-100 font-serif shadow-lg p-5 dark:text-white mb-6">
+        <h2 class="text-3xl font-bold mb-3">Float Text Wrap</h2>
+        <img src="wall.jpg" alt="anime" class="float-right w-64 ml-4 mt-2">
+        <p class="first-letter:text-7xl first-letter:float-left first-letter:mr-1 text-justify">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis possimus, pariatur esse dolorum architecto, est quam dolorem aut voluptatum ducimus consectetur reprehenderit nobis alias
+          eius ea, autem dolore in nesciunt optio! Nostrum, odit magnam perspiciatis repellendus, quae veritatis dolorum dolores sapiente ipsam nulla aliquid mollitia fuga quisquam aut sit nemo ut
+          magni optio! Quos alias ipsa porro magni itaque, eligendi adipisci architecto consequuntur magnam.
+        </p>
+        <img src="wall.jpg" alt="anime" class="float-left w-64 mr-4 my-2">
+        <p class=" text-justify">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis possimus, pariatur esse dolorum architecto, est quam dolorem aut voluptatum ducimus consectetur reprehenderit nobis alias
+          eius ea, autem dolore in nesciunt optio! Nostrum, odit magnam perspiciatis repellendus, quae veritatis dolorum dolores sapiente ipsam nulla aliquid mollitia fuga quisquam aut sit nemo ut
+          magni optio! Quos alias ipsa porro magni itaque, eligendi adipisci architecto consequuntur magnam.
+        </p>
+      </div>
+
+      <div class="grid grid-flow-row grid-cols-2 my-16 gap-4 sm:gap-2">
+        <div class="rounded-lg dark:bg-slate-700 bg-neutral-100 shadow-lg p-5 dark:text-white mx-auto sm:w-64 relative">
+          <div class="w-8 h-8 bg-red-400 rounded-lg absolute -right-3 -top-3 flex cursor-pointer shadow-xl">
+            <span class="text-white font-black m-auto">x</span>
+          </div>
+          <h2 class="text-xl font-bold font-sans mb-3">Close Button Position</h2>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="rounded-lg dark:bg-slate-700 bg-neutral-100 shadow-lg p-5 dark:text-white mx-auto sm:w-64 relative">
+          <div class="w-16 h-8 absolute right-0 top-0 grid grid-flow-row grid-cols-3 mx-1">
+            <div class="rounded-full w-4 h-4 bg-yellow-500 border border-yellow-600 m-auto cursor-pointer"></div>
+            <div class="rounded-full w-4 h-4 bg-green-500 border border-green-600 m-auto cursor-pointer"></div>
+            <div class="rounded-full w-4 h-4 bg-red-500 border border-red-600 m-auto cursor-pointer"></div>
+          </div>
+          <h2 class="text-xl font-bold font-sans mb-3">Macos Button</h2>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+      </div>
+
+      <div class="columns-3">
+        <div class="h-56 bg-neutral-100 dark:bg-slate-700 dark:text-white shadow rounded-lg overflow-hidden mb-4">
+          <div class="w-full bg-slate-100 h-2/3 bg-cover " style="background-image: url('wall.jpg');">
+          </div>
+          <div class="px-4 py-2 font-sans">
+            <h3 class="text-xl font-bold">Column</h3>
+            <p class="overflow-ellipsis">Lorem ipsum.</p>
+          </div>
+        </div>
+        <div class="h-56 bg-neutral-100 dark:bg-slate-700 dark:text-white shadow rounded-lg overflow-hidden mb-4">
+          <div class="w-full bg-slate-100 h-2/3 bg-cover " style="background-image: url('wall.jpg');">
+          </div>
+          <div class="px-4 py-2 font-sans">
+            <h3 class="text-xl font-bold">Column</h3>
+            <p class="overflow-ellipsis">Lorem ipsum.</p>
+          </div>
+        </div>
+        <div class="h-56 bg-neutral-100 dark:bg-slate-700 dark:text-white shadow rounded-lg overflow-hidden mb-4">
+          <div class="w-full bg-slate-100 h-2/3 bg-cover " style="background-image: url('wall.jpg');">
+          </div>
+          <div class="px-4 py-2 font-sans">
+            <h3 class="text-xl font-bold">Column</h3>
+            <p class="overflow-ellipsis">Lorem ipsum.</p>
+          </div>
+        </div>
+        <div class="h-56 bg-neutral-100 dark:bg-slate-700 dark:text-white shadow rounded-lg overflow-hidden mb-4">
+          <div class="w-full bg-slate-100 h-2/3 bg-cover " style="background-image: url('wall.jpg');">
+          </div>
+          <div class="px-4 py-2 font-sans">
+            <h3 class="text-xl font-bold">Column</h3>
+            <p class="overflow-ellipsis">Lorem ipsum.</p>
+          </div>
+        </div>
+        <div class="h-56 bg-neutral-100 dark:bg-slate-700 dark:text-white shadow rounded-lg overflow-hidden mb-4">
+          <div class="w-full bg-slate-100 h-2/3 bg-cover " style="background-image: url('wall.jpg');">
+          </div>
+          <div class="px-4 py-2 font-sans">
+            <h3 class="text-xl font-bold">Column</h3>
+            <p class="overflow-ellipsis">Lorem ipsum.</p>
+          </div>
+        </div>
+        <div class="h-56 bg-neutral-100 dark:bg-slate-700 dark:text-white shadow rounded-lg overflow-hidden mb-4">
+          <div class="w-full bg-slate-100 h-2/3 bg-cover " style="background-image: url('wall.jpg');">
+          </div>
+          <div class="px-4 py-2 font-sans">
+            <h3 class="text-xl font-bold">Column</h3>
+            <p class="overflow-ellipsis">Lorem ipsum.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Responsive design -->
+    <section id="responsive" class="section-card bg-emerald-100">
+      <h1 class="section-title bg-emerald-200">Responsive design</h1>
+
+      <div class="rounded-lg dark:bg-slate-700 bg-neutral-100 font-serif shadow-lg p-5 dark:text-white mb-6">
+        <h2 class="text-3xl sm:text-4xl font-bold mb-3 sm:text-center sm:mx-auto">Resize Your Window Now</h2>
+        <img src="wall.jpg" alt="anime" class="my-2 sm:h-64 sm:w-full sm:object-cover lg:float-left lg:w-1/2 lg:mr-4">
+        <h3 class="text-2xl sm:text-3xl font-bold my-3 italic">Mobile-first design</h3>
+        <p class="first-letter:text-7xl first-letter:float-left first-letter:mr-1">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit nemo adipisci incidunt magnam atque! Inventore eius id, unde maxime recusandae odit repellat ratione doloribus quam
+          natus rem qui, odio, minima magnam facere nostrum aperiam velit sequi assumenda non voluptate? Consequatur, et non cum porro molestias esse modi est eos autem odio soluta assumenda ullam.
+          Natus assumenda dolore voluptatibus neque cum quas at illo. Mollitia, ut quibusdam non esse cum delectus aperiam, a ratione ab iusto magni quo dicta, labore quod vero. Quibusdam voluptatibus
+          accusamus quis reprehenderit veniam facere, ducimus laborum ut saepe! Qui nam veniam fuga numquam quasi voluptas?
+        </p>
+      </div>
+    </section>
+
+    <!-- Flexbox -->
+    <section id="flexbox" class="section-card bg-blue-100">
+      <h1 class="section-title bg-blue-200">Flexbox</h1>
+
+      <div class="sm:flex sm:flex-wrap sm:gap-4 justify-center">
+        <div class="rounded-md mb-4 sm:m-0 bg-white dark:bg-slate-700 sm:w-64 md:w-80 lg:w-64 overflow-hidden">
+          <img src="wall.jpg" alt="anime">
+          <div class="font-sans dark:text-white p-4">
+            <h2 class="text-2xl font-bold mb-2">Flexbox</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+          </div>
+        </div>
+        <div class="rounded-md mb-4 sm:m-0 bg-white dark:bg-slate-700 sm:w-64 md:w-80 lg:w-64 overflow-hidden">
+          <img src="wall.jpg" alt="anime">
+          <div class="font-sans dark:text-white p-4">
+            <h2 class="text-2xl font-bold mb-2">Flex wrap</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+          </div>
+        </div>
+        <div class="rounded-md mb-4 sm:m-0 bg-white dark:bg-slate-700 sm:w-64 md:w-80 lg:w-64 overflow-hidden">
+          <img src="wall.jpg" alt="anime">
+          <div class="font-sans dark:text-white p-4">
+            <h2 class="text-2xl font-bold mb-2">Flex gap</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+          </div>
+        </div>
+        <div class="rounded-md mb-4 sm:m-0 bg-white dark:bg-slate-700 sm:w-64 md:w-80 lg:w-64 overflow-hidden">
+          <img src="wall.jpg" alt="anime">
+          <div class="font-sans dark:text-white p-4">
+            <h2 class="text-2xl font-bold mb-2">Justify center</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+          </div>
+        </div>
+        <div class="rounded-md mb-4 sm:m-0 bg-white dark:bg-slate-700 sm:w-64 md:w-80 lg:w-64 overflow-hidden">
+          <img src="wall.jpg" alt="anime">
+          <div class="font-sans dark:text-white p-4">
+            <h2 class="text-2xl font-bold mb-2">Responsive</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Grid -->
+    <section id="grid" class="section-card bg-blue-100">
+      <h1 class="section-title bg-blue-200">Grid</h1>
+
+      <div class="grid gap-2 grid-cols-1 max-w-md sm:max-w-full mx-auto sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 p-2 bg-white dark:bg-slate-700 rounded-md">
+        <div class="gallery-text md:col-start-2 lg:col-start-3 lg:row-start-2">
+          <h2 class="font-sans font-bold text-2xl self-center dark:text-white">Photo Gallery</h2>
+        </div>
+        <div class="gallery-text justify-end md:col-start-1 md:row-start-3">
+          <h2 class="font-sans font-semibold text-slate-600 text-lg self-end dark:text-slate-100">By @BagusWeb</h2>
+        </div>
+        <div class="gallery-item group lg:row-start-2">
+          <div class="gallery-image" style="background-image: url('1.jpeg');">
+          </div>
+        </div>
+        <div class="gallery-item group lg:col-start-3">
+          <div class="gallery-image" style="background-image: url('2.jpeg');">
+          </div>
+        </div>
+        <div class="gallery-item group md:col-start-1 md:row-start-1 lg:row-start-2 lg:col-start-4">
+          <div class="gallery-image" style="background-image: url('wall.jpg');">
+          </div>
+        </div>
+        <div class="gallery-item group lg:col-start-2 lg:row-start-1">
+          <div class="gallery-image" style="background-image: url('5.jpeg');">
+          </div>
+        </div>
+        <div class="gallery-item group md:col-start-1 md:row-start-4">
+          <div class="gallery-image" style="background-image: url('3.jpeg');">
+          </div>
+        </div>
+        <div class="gallery-item group md:col-start-3 md:row-start-4">
+          <div class="gallery-image" style="background-image: url('4.jpeg');">
+          </div>
+        </div>
+        <div class="gallery-item group md:col-start-2 md:row-start-3">
+          <div class="gallery-image" style="background-image: url('2.jpeg');">
+          </div>
+        </div>
+        <div class="gallery-item group md:col-start-3 md:row-start-3 lg:row-start-4 lg:col-start-4">
+          <div class="gallery-image" style="background-image: url('3.jpeg');">
+          </div>
+        </div>
+        <div class="gallery-item group md:col-start-2 md:row-start-2">
+          <div class="gallery-image" style="background-image: url('4.jpeg');">
+          </div>
+        </div>
+        <div class="gallery-item group">
+          <div class="gallery-image" style="background-image: url('1.jpeg');">
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Fixed theme toggle -->
+  <div class="fixed left-4 bottom-5 p-4 rounded-xl bg-yellow-200 dark:text-white dark:bg-slate-700 drop-shadow dark:border dark:border-slate-500">
+    <div class="flex justify-center my-auto w-full">
+      <span class="my-auto">Light</span>
+      <input type="checkbox" id="toggle2" class="hidden">
+      <label for="toggle2">
+        <div class="w-12 h-6 bg-yellow-400 rounded-full flex items-center p-0.5 cursor-pointer mx-4" id="theme-toogle-bg">
+          <div class="w-5 h-5 rounded-full bg-white" id="theme-toggle"></div>
+        </div>
+      </label>
+      <span class="my-auto">Dark</span>
+    </div>
+  </div>
+
+  <!-- Back to top button -->
+  <a href="#">
+    <div class="fixed right-4 bottom-5 p-4 rounded-xl bg-emerald-200 dark:text-white dark:bg-slate-700 drop-shadow dark:border dark:border-slate-500">Back to top ^</div>
+  </a>
+
+  <div class="mb-[300px]"></div>
+
+  <script>
+    const themeToogle = document.querySelector('#toggle');
+    const themeToogle2 = document.querySelector('#toggle2');
+
+    const html = document.querySelector('html');
+
+    themeToogle.addEventListener('click', function () {
+      themeToogle.checked ? html.classList.add('dark') : html.classList.remove('dark');
+      themeToogle2.checked = themeToogle.checked;
+    });
+
+    themeToogle2.addEventListener('click', function () {
+      themeToogle2.checked ? html.classList.add('dark') : html.classList.remove('dark');
+      themeToogle.checked = themeToogle2.checked;
+    });
+  </script>
+</body>
+
+</html>
